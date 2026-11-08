@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awtrix-ng-nix"
+version = "0.1.0"
+description = "Declarative, identity-checked AWTRIX NG management"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+awtrix-ng-nix = "awtrix_ng_nix:cli"
+
+[tool.setuptools]
+py-modules = ["awtrix_ng_nix"]
